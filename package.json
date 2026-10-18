@@ -4,6 +4,11 @@
   "private": true,
   "type": "module",
   "description": "Finds Git repositories containing a path and verifies each nested submodule boundary.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/git-services-section.git",
+    "directory": "services/finding-parent-git-repositories-service"
+  },
   "bin": {
     "find-parent-git-repositories": "./scripts/find-parent-git-repositories.mjs"
   },
