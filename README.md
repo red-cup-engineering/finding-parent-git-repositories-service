@@ -7,7 +7,10 @@
 [![Tips welcome](https://img.shields.io/badge/tips-welcome-d4a017)](https://github.com/561-group/.github/blob/main/TIPS.md)
 <!-- 561-group-standards:badges:end -->
 
-Finds Git repositories containing a path and verifies each nested submodule boundary.
+Finds the chain of Git repositories that contain a given path, from the
+innermost repository up to a specified top-level repository. Each nested
+repository is verified against its parent's `.gitmodules` file, so the
+result only includes repositories that are properly declared as submodules.
 
 ## Install
 
