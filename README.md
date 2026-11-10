@@ -61,3 +61,7 @@ Throws if `path` or `top` is missing, if `path` does not exist, if `top` is
 not a Git repository, if `path` is not beneath `top`, or if a nested
 repository between `path` and `top` is not declared in its parent's
 `.gitmodules`.
+
+## Acceptance
+
+Run `npm test` for the source suite. See the [API reference](docs/API.md) and [runnable consumer example](examples/quickstart.test.mjs).

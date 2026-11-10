@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "basis": "Find enclosing Git repositories through their declared submodule relationships.",
+  "cases": [
+    {
+      "id": "PARENT-GIT-REFUSAL",
+      "role": "source",
+      "kind": "refusal",
+      "claim": "An undeclared nested repository is refused.",
+      "file": "test/find-parent-git-repositories.test.mjs",
+      "test": "findParentGitRepositories refuses an undeclared nested repository"
+    },
+    {
+      "id": "PARENT-GIT-QUICKSTART",
+      "role": "consumer",
+      "kind": "example",
+      "claim": "An installed caller reads the repository chain from its innermost mount to the outer repository.",
+      "file": "examples/quickstart.test.mjs"
+    }
+  ]
+}

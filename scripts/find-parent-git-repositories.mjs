@@ -3,7 +3,7 @@ import { existsSync, lstatSync, readFileSync } from "node:fs";
 import { dirname, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
-import { parseGitmodules } from "../../gitmodules-file-codec-service/src/gitmodules.mjs";
+import { parseGitmodules } from "@red-cup-engineering/gitmodules-file-codec-service";
 
 export function findParentGitRepositories({ path, top } = {}) {
   if (typeof path !== "string" || path.length === 0) throw new TypeError("path is required");
